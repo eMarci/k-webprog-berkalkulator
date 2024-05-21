@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .small-caps {
+        font-variant: all-small-caps;
+    }
+}
+
+.form-control {
+    @apply w-6/12;
+    @apply p-6;
+    @apply bg-base-100;
+    @apply border-solid;
+    @apply border-2;
+    @apply border-secondary;
+    @apply rounded-2xl;
+}
+
+.table {
+    @apply rounded-none;
+    @apply bg-white;
+    @apply border-[1.5px];
+    @apply border-solid border-black;
+    @apply text-xl;
+}
+
+.table * {
+    font-size: inherit;
+}
+
+.table td {
+    @apply p-5;
+}
+
+.table th {
+    @apply p-5;
+    @apply text-black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*
+
+!*
+Ajánlott CSS beállítások (nyugodtan kitörölheted, ha más megoldásokat szeretnél használni)
+További információ: https://www.joshwcomeau.com/css/custom-css-reset/
+*!
+
+!*
+  1. Use a more-intuitive box-sizing model.
+*!
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+!*
+  2. Remove default margin
+*!
+* {
+  margin: 0;
+}
+!*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*!
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+!*
+  5. Improve media defaults
+*!
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+!*
+  6. Remove built-in form typography styles
+*!
+input, button, textarea, select {
+  font: inherit;
+}
+!*
+  7. Avoid text overflows
+*!
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+h1 {
+  font-variant: all-small-caps;
+}
+
+!*
+  8. Create a root stacking context
+*!
+#root, #__next {
+  isolation: isolate;
+}*/
